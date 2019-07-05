@@ -2,7 +2,7 @@ FROM alpine
 LABEL maintainer="Florian Baader <florian.baader@selectcode.de>"
 
 RUN apk add ruby-dev gcc make g++ ruby-rdoc --no-cache
-RUN gem install kubernetes-deploy big-decimal
+RUN gem install kubernetes-deploy bigdecimal
 
 
 ENV KUBECTL_VERSION v1.12.5
