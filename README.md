@@ -7,6 +7,12 @@
 
 > Docker image to deploy resource to kubernetes
 
+## Tools
+
+- kubectl
+- envsubst
+- [kubernetes-deploy](https://github.com/Shopify/kubernetes-deploy)
+
 ## Install
 
 ```sh
@@ -26,10 +32,13 @@ docker run -ti -v (pwd):/app selectcode/k8sdeploy sh
 - Twitter: [@SelectCodeUG](https://twitter.com/SelectCodeUG)
 - Github: [@SelectCode](https://github.com/SelectCode)
 
+## Maintainer
+
+👤 **Florian Baader**
+
+- Twitter: [@flobaader](https://twitter.com/flobaader)
+- Github: [@flobaader](https://github.com/flobaader)
+
 ## Show your support
 
 Give a ⭐️ if this project helped you!
-
----
-
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
