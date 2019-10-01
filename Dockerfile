@@ -5,7 +5,7 @@ RUN apk add ruby-dev gcc make g++ ruby-rdoc --no-cache
 RUN gem install kubernetes-deploy bigdecimal
 
 
-ENV KUBECTL_VERSION v1.12.5
+ENV KUBECTL_VERSION v1.16.0
 
 RUN apk add --no-cache bash openssl ca-certificates curl wget jq gettext git && \
     curl -L https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl -o /usr/local/bin/kubectl && \
