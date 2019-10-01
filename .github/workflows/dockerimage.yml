@@ -1,0 +1,21 @@
+name: Docker Image CI
+on:
+  push:
+    branches: master
+  schedule:
+    - cron: '*/5 4 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag selectcode/k8sdeploy
+    - name: Publish to Registry
+      uses: elgohr/Publish-Docker-Github-Action@master
+      with:
+       name: selectcode/k8sdeploy
+       username: ${{ secrets.DOCKER_USERNAME }}
+       password: ${{ secrets.DOCKER_PASSWORD }}
+  
+    
